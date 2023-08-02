@@ -11,7 +11,11 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text('0', style: TextStyle()),
+          Text('0',
+              style: TextStyle(
+                fontSize: 45,
+                fontWeight: FontWeight.bold,
+              )),
         ],
       ),
     ));
