@@ -12,12 +12,25 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text('0',
-                  style: TextStyle(
-                    fontSize: 45,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 255, 255, 255),
-                  )),
+              Text(
+                '0',
+                style: TextStyle(
+                  fontSize: 45,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 255, 255, 255),
+                ),
+              ),
+              TextField(
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+                decoration: InputDecoration(
+                  hintText: 'Please enter the amount in BDT',
+                  hintStyle: TextStyle(
+                    color: Colors.white60,
+                  ),
+                ),
+              ),
             ],
           ),
         ));
