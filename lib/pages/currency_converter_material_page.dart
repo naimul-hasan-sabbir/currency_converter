@@ -25,13 +25,14 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                   color: Colors.white,
                 ),
                 decoration: InputDecoration(
-                  hintText: 'Please enter the amount in BDT',
-                  hintStyle: TextStyle(
-                    color: Colors.white60,
-                  ),
-                  prefixIcon: Icon(Icons.monetization_on_outlined),
-                  prefixIconColor: Colors.white60,
-                ),
+                    hintText: 'Please enter the amount in BDT',
+                    hintStyle: TextStyle(
+                      color: Colors.black,
+                    ),
+                    prefixIcon: Icon(Icons.monetization_on_outlined),
+                    prefixIconColor: Colors.black,
+                    filled: true,
+                    fillColor: Colors.white),
               ),
             ],
           ),
