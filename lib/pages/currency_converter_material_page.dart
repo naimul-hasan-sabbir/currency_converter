@@ -22,19 +22,26 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
               ),
               TextField(
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
                 decoration: InputDecoration(
-                    hintText: 'Please enter the amount in BDT',
-                    hintStyle: TextStyle(
+                  hintText: 'Please enter the amount in BDT',
+                  hintStyle: TextStyle(
+                    color: Colors.black,
+                  ),
+                  prefixIcon: Icon(Icons.monetization_on_outlined),
+                  prefixIconColor: Colors.black,
+                  filled: true,
+                  fillColor: Colors.white,
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
                       color: Colors.black,
+                      width: 5.0,
+                      style: BorderStyle.solid,
+                      strokeAlign: BorderSide.strokeAlignOutside,
                     ),
-                    prefixIcon: Icon(Icons.monetization_on_outlined),
-                    prefixIconColor: Colors.black,
-                    filled: true,
-                    fillColor: Colors.white,
-                    focusedBorder:
-                        OutlineInputBorder(borderSide: BorderSide())),
+                  ),
+                ),
               ),
             ],
           ),
