@@ -6,14 +6,14 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final border = OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.black,
-                      width: 5.0,
-                      style: BorderStyle.solid,
-                      strokeAlign: BorderSide.strokeAlignOutside,
-                    ),
-                    borderRadius: BorderRadius.all(Radius.circular(60)),
-                  ),
+      borderSide: BorderSide(
+        color: Colors.black,
+        width: 5.0,
+        style: BorderStyle.solid,
+        strokeAlign: BorderSide.strokeAlignOutside,
+      ),
+      borderRadius: BorderRadius.all(Radius.circular(60)),
+    );
     return Scaffold(
         backgroundColor: Color.fromRGBO(0, 0, 0, 1),
         body: ColoredBox(
@@ -53,17 +53,18 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                   ),
                 ),
               ),
-              TextButton(onPressed: () {
-                if(kDebugMode){
-                  print('button clicked');
-                }
-              }, 
-              style: const ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll(Colors.black),
-                foregroundColor: MaterialStatePropertyAll(Colors.white),
-                fixedSize: MaterialStatePropertyAll(Size(400, 50))
-              ),
-              child: const Text('Click Me'),)
+              TextButton(
+                onPressed: () {
+                  if (kDebugMode) {
+                    print('button clicked');
+                  }
+                },
+                style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll(Colors.black),
+                    foregroundColor: MaterialStatePropertyAll(Colors.white),
+                    fixedSize: MaterialStatePropertyAll(Size(400, 50))),
+                child: const Text('Click Me'),
+              )
             ],
           ),
         ));
