@@ -55,13 +55,14 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: TextButton(
+                child: ElevatedButton(
                   onPressed: () {
                     if (kDebugMode) {
                       print('button clicked');
                     }
                   },
                   style: const ButtonStyle(
+                      elevation: MaterialStatePropertyAll(15),
                       backgroundColor: MaterialStatePropertyAll(Colors.black),
                       foregroundColor: MaterialStatePropertyAll(Colors.white),
                       fixedSize:
