@@ -20,6 +20,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
           backgroundColor: Colors.blueGrey,
           elevation: 0,
           title: Text("Currency Converter"),
+          centerTitle: true,
         ),
         body: Center(
           //color: Color.fromRGBO(255, 0, 0, 1),
