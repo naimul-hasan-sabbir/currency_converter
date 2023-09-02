@@ -15,9 +15,14 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
       borderRadius: BorderRadius.all(Radius.circular(60)),
     );
     return Scaffold(
-        backgroundColor: Color.fromRGBO(0, 0, 0, 1),
-        body: ColoredBox(
-          color: Color.fromRGBO(255, 0, 0, 1),
+        backgroundColor: Colors.blueGrey,
+        appBar: AppBar(
+          backgroundColor: Colors.blueGrey,
+          elevation: 0,
+          title: Text("Currency Converter"),
+        ),
+        body: Center(
+          //color: Color.fromRGBO(255, 0, 0, 1),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
