@@ -22,7 +22,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
           title: Text("Currency Converter"),
           centerTitle: true,
         ),
-        body: Center(
+        
           //color: Color.fromRGBO(255, 0, 0, 1),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
