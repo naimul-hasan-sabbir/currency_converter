@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 
 class CurrencyConverterMaterialPage extends StatelessWidget {
   const CurrencyConverterMaterialPage({super.key});
+
   @override
   Widget build(BuildContext context) {
+    int result = 0;
+    final TextEditingController textEditingController = TextEditingController();
     final border = OutlineInputBorder(
       borderSide: BorderSide(
         color: Colors.black,
@@ -39,6 +42,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(10),
               child: TextField(
+                controller: textEditingController,
                 style: TextStyle(
                   color: Colors.black,
                 ),
