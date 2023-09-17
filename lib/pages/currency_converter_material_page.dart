@@ -5,8 +5,9 @@ class CurrencyConverterMaterialPage extends StatefulWidget {
   const CurrencyConverterMaterialPage({super.key});
 
   @override
-  State<CurrencyConverterMaterialPage> createState() =>
-      _CurrencyConverterMaterialPageState();
+  State<CurrencyConverterMaterialPage> createState() {
+    return _CurrencyConverterMaterialPageState();
+  }
 }
 
 class _CurrencyConverterMaterialPageState
