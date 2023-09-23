@@ -40,7 +40,7 @@ class _CurrencyConverterMaterialPageState
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              result.toString(),
+              'BDT ৳ $result',
               style: const TextStyle(
                 fontSize: 45,
                 fontWeight: FontWeight.bold,
@@ -75,8 +75,9 @@ class _CurrencyConverterMaterialPageState
               padding: const EdgeInsets.all(10.0),
               child: ElevatedButton(
                 onPressed: () {
-                  result = (double.parse(textEditingController.text) * 110);
-                  setState(() {});
+                  setState(() {
+                    result = (double.parse(textEditingController.text) * 110);
+                  });
                 },
                 style: TextButton.styleFrom(
                   backgroundColor: Colors.black,
