@@ -14,23 +14,31 @@ class _CurrencyConverterMaterialPageState
     extends State<CurrencyConverterMaterialPage> {
   double result = 0;
 
+  @override
   Widget build(BuildContext context) {
     final TextEditingController textEditingController = TextEditingController();
+
+    void convert() {
+      setState(() {
+        result = (double.parse(textEditingController.text) * 110);
+      });
+    }
+
     final border = OutlineInputBorder(
-      borderSide: BorderSide(
+      borderSide: const BorderSide(
         color: Colors.black,
         width: 5.0,
         style: BorderStyle.solid,
         strokeAlign: BorderSide.strokeAlignOutside,
       ),
-      borderRadius: BorderRadius.all(Radius.circular(60)),
+      borderRadius: const BorderRadius.all(Radius.circular(60)),
     );
     return Scaffold(
       backgroundColor: Colors.blueGrey,
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
         elevation: 0,
-        title: Text("Currency Converter"),
+        title: const Text("Currency Converter"),
         centerTitle: true,
       ),
       body: Center(
@@ -51,15 +59,15 @@ class _CurrencyConverterMaterialPageState
               padding: const EdgeInsets.all(10),
               child: TextField(
                 controller: textEditingController,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.black,
                 ),
                 decoration: InputDecoration(
                   hintText: 'Please enter the amount in BDT',
-                  hintStyle: TextStyle(
+                  hintStyle: const TextStyle(
                     color: Colors.black,
                   ),
-                  prefixIcon: Icon(Icons.monetization_on_outlined),
+                  prefixIcon: const Icon(Icons.monetization_on_outlined),
                   prefixIconColor: Colors.black,
                   filled: true,
                   fillColor: Colors.white,
@@ -74,11 +82,7 @@ class _CurrencyConverterMaterialPageState
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: ElevatedButton(
-                onPressed: () {
-                  setState(() {
-                    result = (double.parse(textEditingController.text) * 110);
-                  });
-                },
+                onPressed: convert,
                 style: TextButton.styleFrom(
                   backgroundColor: Colors.black,
                   foregroundColor: Colors.white,
@@ -94,6 +98,6 @@ class _CurrencyConverterMaterialPageState
         ),
       ),
     );
-    return const Scaffold();
+    //return const Scaffold();
   }
 }
