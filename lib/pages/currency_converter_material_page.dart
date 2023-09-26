@@ -48,7 +48,7 @@ class _CurrencyConverterMaterialPageState
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              'BDT ৳ $result',
+              'BDT ৳ ${result != 0 ? result.toStringAsFixed(3) : result.toStringAsFixed(0)}',
               style: const TextStyle(
                 fontSize: 45,
                 fontWeight: FontWeight.bold,
