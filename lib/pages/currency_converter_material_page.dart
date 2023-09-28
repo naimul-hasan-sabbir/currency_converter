@@ -13,11 +13,16 @@ class CurrencyConverterMaterialPage extends StatefulWidget {
 class _CurrencyConverterMaterialPageState
     extends State<CurrencyConverterMaterialPage> {
   double result = 0;
+  final TextEditingController textEditingController = TextEditingController();
+
+  @override
+  void dispose() {
+    textEditingController.dispose(); // TODO: implement dispose
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    final TextEditingController textEditingController = TextEditingController();
-
     void convert() {
       setState(() {
         result = (double.parse(textEditingController.text) * 110);
